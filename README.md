@@ -66,11 +66,18 @@ and then you're supposed to write
 All good? Let's start!
 
 ## Fork and clone the repository from github
-Go to https://github.com/kantega/heroku-demo and fork the repo into your personal account. 
-Then, clone the repository from your fork: 
+Go to https://github.com/kantega/heroku-demo and clone the repository to your computer. 
+*Do not fork the repo, because this will complicate pull requests later in the tutorial*
 
-    $ git clone https://github.com/<username>/heroku-demo.git
+    $ git clone https://github.com/kantega/heroku-demo.git
     $ cd heroku-demo
+
+Then, head on over to https://github.com and create a new repository called `heroku-demo`
+on your own account. 
+ 
+    $ git remote remove origin
+    $ git remote add origin git@github.com:<username>/heroku-demo.git
+    $ git push --force -u origin master
 
 ## Create an app
 
